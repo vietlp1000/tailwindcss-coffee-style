@@ -3,8 +3,13 @@
 
 @theme {
     --font-karla: 'Karla', sans-serif;
-    --color-light-coffee: #C89F94;
     --animate-slide-down: slideDown .5s ease-in-out;
+
+    --color-coffee-50: #E8D6D0;
+    --color-coffee-200: #C89F94;
+    --color-coffee-400: #A25F4B;
+    --color-coffee-600: #744838;
+
 
     @keyframes slideDown {
         0% {
@@ -22,7 +27,7 @@
 
 /* hiệu ứng khi hover vào thì có một animations chạy đến hết chữ */
 .vlp-top-menu-item {
-    @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee 
+    @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 
     after:lg:h-0.5 after:lg:w-0 hover:lg:after:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
 }
 
