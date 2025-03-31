@@ -4,6 +4,7 @@
 @theme {
     --font-karla: 'Karla', sans-serif;
     --animate-slide-down: slideDown .5s ease-in-out;
+    --animate-fade-in: fadeIn .5s ease-in-out;
 
     --color-coffee-50: #E8D6D0;
     --color-coffee-200: #C89F94;
@@ -12,12 +13,13 @@
 
 
     @keyframes slideDown {
-        0% {
-          transform: translateY(-100%);
-        }
-        100% {
-          transform: translateY(0);
-        }
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
     }
 }
 
@@ -53,4 +55,8 @@
 
 .vlp-subheadline-label {
     @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-xs text-center;
+}
+
+.vlp-button {
+    @apply text-center uppercase tracking-widest py-4 px-8 text-sm font-semibold cursor-pointer hover:opacity-90;
 }
