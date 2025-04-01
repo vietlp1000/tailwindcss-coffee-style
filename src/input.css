@@ -11,7 +11,6 @@
     --color-coffee-400: #A25F4B;
     --color-coffee-600: #744838;
 
-
     @keyframes slideDown {
         0% { transform: translateY(-100%); }
         100% { transform: translateY(0); }
