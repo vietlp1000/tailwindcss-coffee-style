@@ -57,5 +57,5 @@
 }
 
 .vlp-button {
-    @apply text-center uppercase tracking-widest py-4 px-8 text-sm font-semibold cursor-pointer hover:opacity-90;
+    @apply text-center uppercase tracking-widest py-4 px-8 text-sm font-semibold cursor-pointer hover:opacity-95;
 }
