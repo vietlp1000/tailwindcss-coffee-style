@@ -59,3 +59,7 @@
 .vlp-button {
     @apply text-center uppercase tracking-widest py-4 px-8 text-sm font-semibold cursor-pointer hover:opacity-95;
 }
+
+.vlp-footer-link {
+    @apply hover:text-coffee-400;
+}
